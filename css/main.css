@@ -55,15 +55,17 @@ p {
 
 #newgame {
 	color: white;
-	padding: 30px;
-	border: 1px;
+/*	padding: 30px;
+*/	border: 1px;
 	border-color: white;
 	border-radius: 30px;
 	background-color: yellow;
 	border-style: dashed;
+	float: left;
 }
 
 #howto {
 	color: white;
-	padding: 60px;
+/*	padding: 60px;
+*/	float: right;
 }
