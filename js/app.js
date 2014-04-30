@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+// Responses for 8 ball
+
 	var responses = ["It is certain.", 
 		"It is decidedly so.", 
 		"Without a doubt.", 
@@ -21,6 +23,8 @@ $(document).ready(function() {
 		"Outlook not good.",
 		"Very doubtful."]
 
+// New Game
+
 	var newGame = 0
 
 	$("#newgame").click(function(e) {
@@ -29,12 +33,12 @@ $(document).ready(function() {
 		 $("#answertext").html('');
 	});
 
-	
+// Process the question and return an answer
+
 	function processQuestion() {
 		if ($("#question").val().length >= 3) {
 			var random = Math.floor(Math.random() * responses.length);
 			var answer = responses[random];
-			// alert(answer);
 			$("#answertext").append('<p>' + answer + '</p>');
 		}
 		else {
@@ -52,6 +56,12 @@ $(document).ready(function() {
 
 
 	$("#triangle").click(processQuestion);
+
+// Game instructions
+
+	$("#howto").click(function(event) {
+		alert("Enter a question, then click on the Icosahedron (blue triangle). Your fortune will be told. Yes/No questions are preferred.");
+	});
 
 });
 

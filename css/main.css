@@ -1,42 +1,47 @@
 
 body {
-	text-align: center;
-	margin-top: 20px;
+	text-align: center;	
 	background-color: white;
-	
-}
+	}
 
+/* Magic 8 ball circle*/
 
 #display {
 	margin-right: 30%;
-	margin-left: 20%;
+	margin-left: 30%;
 	border-width: 2px;
 	border-color: white;
 	border-style: solid;
 	border-radius: 50%;
 	background-color: black;
-	height: 700px;
-	width: 700px;
+	height: 500px;
+	width: 500px;
 	color: white;
 	position: relative;
 }
+
+
+/* Title */
 
 h1 {
 	font-size: 2em;
 	font-family: sans-serif, Helvetica;
 	font-weight: bold;
 	color: white;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
+/* Enter question in text box styling */
+
 #game {
-	padding-top: 50px;
+	padding-top: 10px;
+}
 	
 
 p {
 	font-size: 1em;
 	font-family: serif, Times;
-	padding: 20px;
+	padding: 10px;
 	color: white;
 }
 
@@ -46,26 +51,42 @@ p {
 }
 
 
+/* Triangle image for responses */
+
 #answer {
-	position: absolute;
-	margin-top: 70px;
+	position: inline-block;
+	padding-top: 35px;
 
 }
 
+
+/* New Game button */
 
 #newgame {
 	color: white;
-/*	padding: 30px;
-*/	border: 1px;
-	border-color: white;
-	border-radius: 30px;
-	background-color: yellow;
-	border-style: dashed;
-	float: left;
+	font-family: sans-serif, Helvetica;
+	border: 1px;
+	background-color: black;
+	padding: 5px;
+	border-radius: 3px;
+	border-style: solid;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
 }
+
+/* How to Play button */
 
 #howto {
 	color: white;
-/*	padding: 60px;
-*/	float: right;
+	font-family: sans-serif, Helvetica;
+	position: absolute;	
+	right: 0px;
+	background-color: black;
+	padding: 5px;
+	border-radius: 3px;
+	border-style: solid;
+	bottom: 0px;
 }
+
+
